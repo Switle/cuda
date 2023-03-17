@@ -1,0 +1,29 @@
+.welcome
+    background-color: #87509c
+    padding: 235px 0 145px
+    &__text
+        font-size: 42px
+        font-weight: 700
+        line-height: 1.17
+        color: #f7f3ea
+        margin-bottom: 50px
+    &__button
+        background-color: $accentOrange
+
+    //320-480
+    //480-768
+    //768-1024
+    //1024-1200
+
+@media ( max-width: 767px )
+    .welcome
+        padding: 150px 0 100px
+        &__text
+            br
+                display: none
+
+@media ( max-width: 479px )
+    .welcome
+        padding: 100px 0 80px
+        &__text
+            font-size: 38px

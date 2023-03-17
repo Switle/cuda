@@ -1,0 +1,62 @@
+.get-in-touch
+    padding: 120px 0 115px
+    background-color: #3c5499
+    &__text
+        margin-bottom: 75px
+    &__form
+        max-width: 860px
+        margin: 0 auto
+
+.form
+    &__inner
+        margin: 0 -16px
+        margin-bottom: 59px
+    &__wrapper
+        padding: 0 16px
+        width: 100%
+    &__button
+        background-color: #30bae7
+    &__inputs
+        display: flex
+        margin-bottom: 27px
+    &__input
+        height: 56px
+    &__textarea
+        height: 200px
+        resize: none
+    &__label
+        position: relative
+        display: block
+    &__placeholder
+        position: absolute
+        top: 20px
+        left: 25px
+        font-size: 18px
+        line-height: 1
+        transition: 0.2s
+        span
+            font-size: 16px
+            color: #f44
+    &__input, &__textarea
+        border-radius: 4px
+        background-color: #273a71
+        width: 100%
+        padding: 18px 25px
+        color: #fff
+        &:focus + .form__placeholder, &:not(:placeholder-shown) + .form__placeholder
+            top: -20px
+
+@media ( max-width: 768px )
+    .get-in-touch
+        padding: 100px 0
+
+@media ( max-width: 480px )
+    .get-in-touch
+        padding: 80px 0
+
+    .form
+        &__inputs
+            flex-direction: column
+        &__wrapper
+            &:not(:last-child)
+                margin-bottom: 27px

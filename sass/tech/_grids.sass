@@ -1,0 +1,31 @@
+.row
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+
+.col
+    &-2
+        flex: 1 1 50%
+    &-4
+        flex: 1 1 25%
+
+    //320-480
+    //480-768
+    //768-1024
+    //1024-1200      
+
+@media ( max-width: 900px )
+    .col
+        &-2
+            flex: 1 1 100%
+            display: flex
+            justify-content: center
+        &-4
+            flex: 1 1 50%
+
+@media ( max-width: 480px )
+    .col
+        &-4
+            flex: 1 1 100%
+            display: flex
+            justify-content: center

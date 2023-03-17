@@ -1,0 +1,62 @@
+.about-us
+    padding: 119px 0 128px
+    background-color: #d74680
+    color: #fff
+    &__text
+        margin-bottom: 70px
+    &__cards
+        margin: -73px -10px
+    &__card
+        padding: 73px 10px
+        max-width: 520px
+    .card
+        display: flex
+        text-align: left
+        height: 100%
+        &__img
+            min-width: 96px
+            min-height: 96px
+            max-width: 96px
+            max-height: 96px
+            margin-right: 46px
+            border-radius: 50%
+            background-color: #787878
+            overflow: hidden
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+        &__text
+            font-size: 21px
+            line-height: 1.48
+            letter-spacing: 0.42px
+            font-style: italic
+            margin-bottom: 26px
+        &__title
+            margin-bottom: 7px
+        &__role
+            font-size: 18px
+            line-height: 1.44
+            letter-spacing: 0.36px
+            color: #fd9
+
+@media ( max-width: 768px )
+    .about-us
+        padding: 100px 0
+
+@media ( max-width: 480px )
+    .about-us
+        padding: 80px 0
+        &__cards
+            margin: -50px 0
+        &__card
+            padding: 50px 0
+        .card
+            text-align: center
+            flex-direction: column
+            align-items: center
+            &__img
+                min-width: 160px
+                min-height: 160px
+                margin: 0 auto
+                margin-bottom: 40px

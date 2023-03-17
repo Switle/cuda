@@ -1,0 +1,36 @@
+.services
+    background-color: $accentGreen
+    padding: 120px 0 130px
+    &__text
+        margin-bottom: 80px
+    &__cards
+        margin: -20px 0
+    &__card
+        padding: 20px 0
+    .card
+        &__img
+            height: 124px
+            margin-bottom: 62px
+            img
+                height: 100%
+        &__title
+            margin-bottom: 25px
+    //320-480
+    //480-768
+    //768-1024
+    //1024-1200
+
+@media ( max-width: 1023px )
+    .services
+        padding: 100px 0 100px
+
+@media ( max-width: 768px )
+    .services
+        padding: 80px 0 80px
+        &__text
+            margin-bottom: 60px
+        .card
+            &__img
+                margin-bottom: 40px
+            &__title
+                margin-bottom: 20px

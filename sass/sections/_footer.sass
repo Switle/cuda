@@ -1,0 +1,23 @@
+.footer
+    padding: 49px 0 41px
+    background-color: #344b8e
+    &__socials
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        margin: -10px -30px
+    &__social
+        padding: 10px 30px
+        font-size: 24px
+        font-weight: 600
+        line-height: 1.25
+        letter-spacing: 0.48px
+        transition: 0.2s
+        &:hover
+            color: #30bae7
+            transition: 0.5s
+
+@media ( max-width: 480px )
+    .footer
+        &__socials
+            flex-direction: column

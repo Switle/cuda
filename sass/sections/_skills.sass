@@ -1,0 +1,50 @@
+.skills
+    padding: 117px 0 122px
+    color: $optionalTextColor
+    &__text
+        margin-bottom: 84px
+    &__cards
+        margin: -30px 0
+    &__card
+        margin: 30px 0
+
+.diagram
+    width: 160px
+    height: 160px
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 0 auto
+    margin-bottom: 32px
+    --color
+    &__body
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        transform: rotate(-90deg)
+    &__circle
+        fill: none
+        stroke-width: 3
+        stroke: #dfe8ed
+        &_color
+            stroke: var(--color)
+            stroke-dasharray: 25 100
+    &__percent
+        font-size: 50px
+        font-weight: 300
+        letter-spacing: 1px
+        display: flex
+        justify-content: center
+        align-items: baseline
+        span
+            font-size: 32px
+
+@media ( max-width: 768px )
+    .skills
+        padding: 100px 0 100px
+
+@media ( max-width: 480px )
+    .skills
+        padding: 80px 0 80px
